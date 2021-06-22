@@ -15,6 +15,8 @@ export const Button = ({
   buttonSize,
   buttonColor,
 }) => {
+  const checkButtonStyle = STYLES.includes(buttonStyle);
+
   return (
     <button
       className={`btn ${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}`}
