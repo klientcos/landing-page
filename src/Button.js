@@ -15,7 +15,15 @@ export const Button = ({
   buttonSize,
   buttonColor,
 }) => {
-  const checkButtonStyle = STYLES.includes(buttonStyle);
+  const checkButtonStyle = STYLES.includes(buttonStyle)
+    ? buttonStlye
+    : STYLES[0];
+
+  const checkButtonSize = STYLES.includes(buttonStyle) ? buttonStlye : SIZES[0];
+
+  const checkButtonColor = STYLES.includes(buttonStyle)
+    ? buttonColor
+    : COLOR[0];
 
   return (
     <button
@@ -27,3 +35,5 @@ export const Button = ({
     </button>
   );
 };
+
+export default Button;
