@@ -1,7 +1,7 @@
 import React from "react";
-import { Button } from "./Button";
-import { link } from "react-router-dom";
 import "./HeroSection.css";
+import { Button } from "./Button";
+import { Link } from "react-router-dom";
 
 function HeroSection({
   lightBg,
@@ -38,7 +38,7 @@ function HeroSection({
                   className={
                     lightTextDesc
                       ? "home__hero-subtitle"
-                      : "home_hero-subtitle dark"
+                      : "home__hero-subtitle dark"
                   }
                 >
                   {description}
@@ -50,7 +50,6 @@ function HeroSection({
                 </Link>
               </div>
             </div>
-
             <div className="col">
               <div className="home__hero-img-wrapper">
                 <img src={img} alt={alt} className="home__hero-img" />
