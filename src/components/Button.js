@@ -16,14 +16,12 @@ export const Button = ({
   buttonColor,
 }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
-    ? buttonStlye
+    ? buttonStyle
     : STYLES[0];
 
-  const checkButtonSize = STYLES.includes(buttonStyle) ? buttonStlye : SIZES[0];
+  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
-  const checkButtonColor = STYLES.includes(buttonStyle)
-    ? buttonColor
-    : COLOR[0];
+  const checkButtonColor = COLOR.includes(buttonColor) ? buttonColor : null;
 
   return (
     <button
@@ -35,5 +33,3 @@ export const Button = ({
     </button>
   );
 };
-
-export default Button;
